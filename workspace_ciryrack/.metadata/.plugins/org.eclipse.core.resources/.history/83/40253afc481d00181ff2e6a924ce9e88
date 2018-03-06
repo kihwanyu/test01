@@ -1,0 +1,82 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<style>
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+	* {
+		font-family: 'Nanum Gothic', serif;
+		font-size: 15px;
+		font-weight: bold;
+	}
+    header {
+		margin-top: 20px;
+	}
+	
+	#menubar {
+		margin-top : 20px;
+		text-align: center;
+	}
+	#logo {
+		height: 100%;
+	}
+	.menuNav {
+		padding: 10px;
+		text-align: center;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.home {
+		background: gray; 
+		border-top-left-radius:1em; 
+		border-top-right-radius:1em; 
+		border-bottom-right-radius:1em; 
+		border-bottom-left-radius:1em;
+	}
+	table {
+		border: 1px solid black;
+		text-align: center;
+		border-collapse: collapse;
+		
+	}	
+	.tableArea {
+		width: 100%;
+		height: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	th, td {
+		border: 1px solid black;
+		padding: 10px;
+		font-size: 10px;
+	}
+</style>
+<header>
+	<div>	
+		<div id="logout" align="right">
+			<img alt="" src="../logo.jpg" style="" align="left">
+			관리자님 환영합니다.&nbsp;
+			<a href="#" class="btn btn-default" role="button"><i class="fas fa-sign-out-alt"></i>&nbsp;로그아웃</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+	</div>
+</header>
+<div align="center">
+<nav class="navbar navbar-inverse" id="menubar" style="width: 99%">
+	<ul class="nav navbar-nav">
+		<li class="menuNav"><a href="<%=request.getContextPath() %>/index.jsp" class="home" style="color: white;">HOME</a></li>
+		<li class="menuNav"><a href="<%=request.getContextPath() %>/views/admin/admin_member.jsp">회원관리</a></li>
+		<li class="menuNav"><a href="<%=request.getContextPath() %>/views/admin/admin_product.jsp">상품관리</a></li>
+		<li class="menuNav"><a href="<%=request.getContextPath() %>/views/admin/admin_stock.jsp">재고관리</a></li>
+		<li class="menuNav"><a href="#">주문관리</a></li>
+		<li class="menuNav"><a href="#">배송관리</a></li>
+		<li class="menuNav"><a href="#">결제관리</a></li>
+		<li class="menuNav"><a href="#">게시판관리</a></li>
+		<li class="menuNav"><a href="#">회원탈퇴관리</a></li>
+		
+	</ul>
+</nav>
+</div>

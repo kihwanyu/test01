@@ -1,0 +1,116 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+<style>
+	@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+	* {
+		font-family: 'Nanum Gothic', serif;
+		font-size: 15px;
+		font-weight: bold;
+	}
+	header {
+		margin-top: 20px;
+	}
+	footer{
+		padding-bottom : 100px;
+		background : black;
+		color: white;
+	}
+	#menubar {
+		margin-top : 20px;
+		text-align: center;
+	}
+	#logo {
+		height: 100%;
+	}
+	.menuNav {
+		padding: 10px;
+		text-align: center;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.home {
+		background: gray; 
+		border-top-left-radius:1em; 
+		border-top-right-radius:1em; 
+		border-bottom-right-radius:1em; 
+		border-bottom-left-radius:1em;
+	}
+	table {
+		border: 1px solid black;
+		text-align: center;
+		border-collapse: collapse;
+		
+	}	
+	.tableArea {
+		width: 100%;
+		height: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	th, td {
+		border: 1px solid black;
+		padding: 10px;
+	}
+</style>
+<title>회원 관리</title>
+</head>
+<body>
+	<%@ include file="/views/admin/common/header.jsp" %>
+	<section>	
+		<div class="tableArea" align="center">
+			<h2>회원 탈퇴 정보</h2><br>
+			<table style="width: 70%">
+				<tr>
+					<th width="10%" style="text-align: center;">번호</th>
+					<th width="30%" style="text-align: center;">이메일</th>
+					<th width="20%" style="text-align: center;">탈퇴날짜</th>
+					<th width="30%" style="text-align: center;">탈퇴사유</th>
+					<th width="30%" style="text-align: center;">취소</th>
+				</tr>
+				<tr>
+					<td style="text-align: right;">1</td>
+					<td>asd0526@naver.com</td>
+					<td style="text-align: right;">100%</td>
+					<td>관리자</td>
+					<td><button onclick="dropOut();">취소</button></td>
+				</tr>
+				<tr>
+					<td style="text-align: right;">200</td>
+					<td>asd0516@naver.com</td>
+					<td style="text-align: right;">5%</td>
+					<td>null</td>
+					<td><button onclick="dropOut();">취소</button></td>
+				</tr>
+				<tr>
+					<td style="text-align: right;">300</td>
+					<td>asd0326@naver.com</td>
+					<td style="text-align: right;">3%</td>
+					<td>null</td>
+					<td><button onclick="dropOut();">취소</button></td>
+				</tr>
+			</table>	
+			
+		</div>
+	</section>
+	<%@ include file="/views/admin/common/footer.jsp" %>
+	<script type="text/javascript">
+		function dropOut(){
+			var result = window.confirm("관리자등급을 삭제하시겠습니까?");
+			if(result==true){
+				
+			} else {
+				
+			}
+		}
+		</script>
+</body>
+</html>

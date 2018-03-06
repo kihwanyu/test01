@@ -1,0 +1,13 @@
+
+2월 26, 2018 23:42:33.87 NEW SESSION
+2월 26, 2018 23:42:33.87 [52040:53272:0226/234233.866:ERROR:page_load_metrics_update_dispatcher.cc(208)] Invalid first_meaningful_paint (unset) for time_to_interactive 1.456 s
+2월 26, 2018 23:42:42.09 [52040:53272:0226/234242.093:ERROR:page_load_metrics_update_dispatcher.cc(208)] Invalid first_meaningful_paint (unset) for time_to_interactive 1.456 s
+2월 26, 2018 23:42:44.53 [52040:53272:0226/234244.532:ERROR:page_load_metrics_update_dispatcher.cc(208)] Invalid first_meaningful_paint (unset) for time_to_interactive 1.456 s
+2월 26, 2018 23:42:46.39 [52040:53272:0226/234246.394:ERROR:page_load_metrics_update_dispatcher.cc(208)] Invalid first_meaningful_paint (unset) for time_to_interactive 1.456 s
+
+3월 04, 2018 18:33:40.60 NEW SESSION
+3월 04, 2018 18:33:40.60 [79196:79200:0304/183340.193:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+3월 04, 2018 18:33:42.68 [79196:61412:0304/183342.680:ERROR:connection_factory_impl.cc(381)] Failed to connect to MCS endpoint with error -106
+3월 04, 2018 18:33:43.00 [79196:61412:0304/183343.000:ERROR:connection_factory_impl.cc(381)] Failed to connect to MCS endpoint with error -106
+3월 04, 2018 18:34:08.72 [79196:61412:0304/183408.725:ERROR:connection_factory_impl.cc(381)] Failed to connect to MCS endpoint with error -21
+3월 04, 2018 20:12:14.75 [79196:79200:0304/201214.751:ERROR:page_load_metrics_update_dispatcher.cc(208)] Invalid first_meaningful_paint (unset) for time_to_interactive 0.495 s

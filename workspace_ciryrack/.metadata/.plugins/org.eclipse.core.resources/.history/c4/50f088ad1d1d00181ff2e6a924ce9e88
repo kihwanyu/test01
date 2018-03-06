@@ -1,0 +1,123 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+	@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+	* {
+		font-family: 'Nanum Gothic', serif;
+		font-size: 15px;
+		font-weight: bold;
+	}
+	header {
+		margin-top: 20px;
+	}
+	footer{
+		padding-bottom : 100px;
+		background : black;
+		color: white;
+	}
+	#menubar {
+		margin-top : 20px;
+		text-align: center;
+	}
+	#logo {
+		height: 100%;
+	}
+	.menuNav {
+		padding: 10px;
+		text-align: center;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.home {
+		background: gray; 
+		border-top-left-radius:1em; 
+		border-top-right-radius:1em; 
+		border-bottom-right-radius:1em; 
+		border-bottom-left-radius:1em;
+	}
+	table {
+		border: 1px solid black;
+		text-align: center;
+		border-collapse: collapse;
+		
+	}	
+	.tableArea {
+		width: 100%;
+		height: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	th, td {
+		border: 1px solid black;
+		padding: 10px;
+		font-size: 14px;
+	}
+	th {
+		background: lightgray;
+	}
+</style>
+<title>회원 관리</title>
+</head>
+<body>
+	<%@ include file="/views/admin/common/header.jsp" %>
+	<section>
+		<div class="tableArea" align="center">
+		<h2>배송 상세</h2><br>
+			<table style="width: 30%;">
+				<tr>
+					<th width="50%" style="text-align: center; background: lightyellow">주문번호</th>
+					<th width="50%" style="text-align: center; background: lightyellow">100000</th>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<table style="width: 40%">
+				<tr>
+					<td width="15%" style="text-align: center;">배송번호</td>
+					<td width="35%" style="text-align: center;">100001</td>
+					<td width="15%" style="text-align: center;">송장번호</td>
+					<td width="35%" style="text-align: center;">1000043241</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">전화번호</td>
+					<td style="text-align: center;">
+						02-444-1111
+					</td>
+					<td style="text-align: center;">핸드폰</td>
+					<td style="text-align: center;">
+						010-4444-1111
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: left;">주소</td>
+					<td style="text-align: left;" colspan="4">
+					우편번호 : <br>
+					주소 : <br>
+					상세주소 : 
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: left;">메세지</td>
+					<td style="text-align: left;" colspan="4">
+						부재시 경비실에 보관
+					</td>
+				</tr>
+			</table>	
+			<div align="center">
+				<br>
+				<button onclick="location.href='<%=request.getContextPath() %>/views/admin/admin_deliveryDetailUpdate.jsp'"></button>
+			</div>
+		</div>
+	</section>
+	<%@ include file="/views/admin/common/footer.jsp" %>
+</body>
+</html>

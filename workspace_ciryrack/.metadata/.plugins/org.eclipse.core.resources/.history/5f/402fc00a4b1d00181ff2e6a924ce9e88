@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8">
+<style>
+   @import url("css/common.css");
+	
+  .tableArea{
+    height:100px !important;
+  }
+  
+  .btnArea{
+    width:180px;
+    height:50px;
+    margin-top:5px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+</style>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<%@ include file="/views/admin/common/header.jsp" %>
+	<div class="tableArea" align="center">
+		<table style="width: 30%">
+			<tr>
+			<th width="2%" style="text-align: center;">상품코드</th>
+			<th width="2%" style="text-align: center;">상품명</th>
+			<th width="2%" style="text-align: center;">입고수량</th>
+			</tr>
+			<tr>
+			<td>100</td>
+			<td>소세지야채볶음</td>
+			<td><input type="text" class="form-control" id="usr"></td>
+			</tr>	
+		</table>
+	</div>		
+	<div class="btnArea">
+		<button type="button" class="btn btn-default">입고신청</button>
+		<a href="../admin/admin_product.jsp" class="btn btn-default" role="button">취소</a>
+	</div> 
+	<%@ include file="/views/admin/common/footer.jsp"%>
+  
+</body>
+</html>
