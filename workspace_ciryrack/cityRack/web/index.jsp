@@ -65,6 +65,7 @@
 <title>회원 관리</title>
 </head>
 <body>
+	<!-- 수정함ㄴ -->
 	<%@ include file="/views/admin/common/header.jsp" %>
 	<section>
 		<h1 align="center">메인화면입니다.</h1>	
